@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Pribadi - Fakhri Lukmansyah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f4f8fb;
+      color: #333;
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #004466;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+    }
+
+    nav .logo img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero */
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #00aaff, #004466);
+      color: #fff;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 0 15px rgba(255,255,255,0.5);
+    }
+
+    header h1 {
+      font-size: 2.4em;
+      margin: 20px 0 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+
+    /* Section umum */
+    section {
+      width: 90%;
+      max-width: 900px;
+      background: #fff;
+      margin: 40px auto;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      color: #004466;
+      border-bottom: 3px solid #00aaff;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    /* Tentang */
+    .about p {
+      line-height: 1.7;
+      font-size: 1.05em;
+    }
+
+    .profile-info {
+      margin-top: 20px;
+    }
+
+    .profile-info p {
+      margin: 6px 0;
+    }
+
+    /* Skill */
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      display: inline-block;
+      background: #00aaff;
+      color: #fff;
+      margin: 5px;
+      padding: 8px 14px;
+      border-radius: 25px;
+      font-size: 0.95em;
+    }
+
+    /* Pengalaman */
+    .experience-item {
+      margin-bottom: 18px;
+    }
+
+    .experience-item h3 {
+      color: #004466;
+      margin: 5px 0;
+    }
+
+    .experience-item span {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    /* Contact */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1em;
+    }
+
+    button {
+      background: #00aaff;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #008ecc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004466;
+      color: #fff;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="Gambar WhatsApp 2025-10-20 pukul 22.13.46_9c099f8c.jpg"Logo" />
+      <span>faKhri</span>
+    </div>
+    <ul>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#experience">Pengalaman</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="Gambar WhatsApp 2025-10-20 pukul 22.13.46_9c099f8c.jpg" alt="Foto Profil">
+    <h1>Hi, Saya Fakhri Lukmansyah</h1>
+    <p>Pelajar SMK DWIJA BHAKTI 1 JOMBANG | Jurusan TJKT</p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Halo, nama saya <strong>Fakhri Lukmansyah</strong> atau biasa dipanggil <strong>Fakhri</strong>. 
+      Saya seorang pelajar berusia <strong>16 tahun</strong> yang saat ini duduk di kelas <strong>XI</strong> 
+      jurusan <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong> di 
+      <strong>SMK DWIJA BHAKTI 1 JOMBANG</strong>.
+    </p>
+    <p>
+      Saya memiliki minat besar dalam dunia jaringan komputer, sistem administrasi, dan konfigurasi perangkat jaringan seperti Mikrotik. 
+      Saya senang belajar hal baru, beradaptasi dengan teknologi, dan berusaha menjadi pribadi yang disiplin serta bertanggung jawab.
+    </p>
+
+    <div class="profile-info">
+      <p><strong>Nama:</strong> Fakhri Lukmansyah</p>
+      <p><strong>Nama Panggilan:</strong> Fakhri</p>
+      <p><strong>Umur:</strong> 16 Tahun</p>
+      <p><strong>Sekolah:</strong> SMK DWIJA BHAKTI 1 JOMBANG</p>
+      <p><strong>Jurusan:</strong> TJKT</p>
+      <p><strong>Kelas:</strong> XI</p>
+      <p><strong>Status:</strong> Pelajar</p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skill Saya</h2>
+    <ul>
+      <li>Computer Networking</li>
+      <li>System Administration</li>
+      <li>Mikrotik Configuration</li>
+      <li>Network Troubleshooting</li>
+      <li>Basic Linux Command</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Pengalaman</h2>
+    <div class="experience-item">
+      <h3>Mulai Pendidikan TJKT di SMK DWIJA BHAKTI 1 JOMBANG</h3>
+      <span>2024 - Sekarang</span>
+      <p>
+        Dimulai pada tahun 2024, saya resmi terdaftar di program keahlian 
+        <strong>Teknik Jaringan Komputer dan Telekomunikasi (TJKT)</strong>. 
+        Di sini saya mulai memahami dasar-dasar jaringan komputer, perangkat keras jaringan, dan administrasi sistem.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Praktik Instalasi dan Konfigurasi Jaringan</h3>
+      <span>2025</span>
+      <p>
+        Berpartisipasi dalam berbagai proyek kecil di sekolah seperti pemasangan kabel LAN, konfigurasi router Mikrotik, 
+        serta pembuatan topologi jaringan menggunakan Cisco Packet Tracer.
+      </p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Pelatihan Mikrotik dan Dasar Keamanan Jaringan</h3>
+      <span>2025</span>
+      <p>
+        Mengikuti pelatihan internal di sekolah mengenai konfigurasi Mikrotik, firewall, manajemen bandwidth, 
+        dan keamanan jaringan tingkat dasar.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Kontak Saya</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea rows="4" placeholder="Pesan Anda..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Fakhri Lukmansyah.
+  </footer>
+</body>
+</html>
